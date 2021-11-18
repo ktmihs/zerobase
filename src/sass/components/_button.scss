@@ -1,4 +1,4 @@
-@use './../utils' as *;
+@use './../utils'as *;
 
 // 기본 버튼 스타일
 .button {
@@ -20,6 +20,7 @@
     @include desktop {
       display: none;
     }
+
     width: rem(25px);
     height: rem(25px);
     overflow: hidden;
@@ -41,14 +42,27 @@
       height: 12%;
       top: 10%;
     }
+
     &__middle {
       height: 12%;
       top: 45%;
-      transform: translateY(5);
+      transform: translateY(5%);
     }
+
     &__bottom {
       height: 12%;
       top: 80%;
     }
+  }
+
+  &-group {
+    padding: rem(2px);
+  }
+
+  &-practice-prev,
+  &-practice-next {
+    border: none;
+    background-color: transparent;
+    @include font-24px-B;
   }
 }

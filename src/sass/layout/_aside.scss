@@ -1,11 +1,13 @@
 @use "./../utils" as *;
 
 .banner {
+  margin-top: rem(64px);
   @include tablet {
     height: rem(404px);
   }
   @include desktop {
     height: rem(404px);
+    margin-top: rem(114px);
   }
   position: relative;
   a {
@@ -49,7 +51,7 @@
     position: absolute;
     bottom: rem(7px);
     left: rem(100px);
-
+    text-align: center;
     @include desktop {
       bottom: rem(24px);
       left: 15vw;
@@ -64,6 +66,7 @@
       height: rem(36px);
       border: none;
       background-color: rgba(0, 0, 0, 0.24);
+      color: $white;
       margin: 0;
     }
     .button-prev {
@@ -129,15 +132,26 @@
   }
   &-slide {
     display: none;
+
     &.is-active {
       display: flex;
       img {
         @include desktop {
-          transform: scale(0.8);
+          animation-name: changeImage;
+          animation-duration: 5s;
         }
         @include tablet {
-          transform: scale(0.8);
+          animation-name: changeImage;
+          animation-duration: 5s;
         }
+      }
+    }
+    @keyframes changeImage {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(0.8);
       }
     }
     @include mobile {
@@ -158,11 +172,9 @@
       }
       @include tablet {
         max-height: 308px;
-        transition: transform 5s linear;
       }
       @include desktop {
         max-height: 308px;
-        transition: transform 5s linear;
       }
     }
     div {

@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>제로베이스 - 밑바닥부터 끝까지 듣는 온라인 강의</title>
-  <link rel="stylesheet" href="./style/index.css" />
-  <script defer src="./js/navigation.js"></script>
-  <script defer src="./js/banner.js"></script>
-  <script defer src="./js/course.js"></script>
+  <link rel="stylesheet" href="./src/style/index.css" />
+  <script defer src="./src/js/navigation.js"></script>
+  <script defer src="./src/js/banner.js"></script>
+  <script defer src="./src/js/course.js"></script>
 </head>
 
 <body>
   <header class="header">
     <div class="header-layout">
       <h1 class="header__title">
-        <a class="logo" href="#"><img src="./assets/logo.svg" alt="zerobase"></a>
+        <a class="logo" href="#"><img src="./src/assets/logo.svg" alt="zerobase"></a>
       </h1>
       <nav class="header-nav">
         <!-- hamberger button -->
@@ -32,11 +32,11 @@
           <li class="header-nav__item">
             <div class="member-service">
               <div class="login">
-                <img class="loginIcon" src="./assets/login.svg" alt="로그인">
+                <img class="loginIcon" src="./src/assets/login.svg" alt="로그인">
                 <a class="header-members__login" href="">로그인</a>
               </div>
               <div class="signup">
-                <img class="signupIcon" src="./assets/login.svg" alt="회원가입">
+                <img class="signupIcon" src="./src/assets/login.svg" alt="회원가입">
                 <a class="header-members__signup" href="">회원가입</a>
               </div>
             </div>
@@ -44,7 +44,7 @@
           <li class="header-nav__item">
             <button type="button" class="button header-nav__button">
               about us
-              <img src="./assets/icon-arrow.svg" alt="화살표">
+              <img src="./src/assets/icon-arrow.svg" alt="화살표">
             </button>
             <ul class="sub-menu">
               <li>
@@ -57,7 +57,7 @@
           </li>
           <li class="header-nav__item">
             <button class="button header-nav__button" type="button">이벤트
-              <img src="./assets/icon-arrow.svg" alt="화살표">
+              <img src="./src/assets/icon-arrow.svg" alt="화살표">
             </button>
             <ul class="sub-menu">
               <li>
@@ -74,7 +74,7 @@
           <li class="header-nav__item">
             <button class="button header-nav__button" type="button">
               온라인 강의
-              <img src="./assets/icon-arrow.svg" alt="화살표">
+              <img src="./src/assets/icon-arrow.svg" alt="화살표">
             </button>
             <ul class="sub-menu">
               <li>
@@ -90,7 +90,7 @@
           </li>
           <li class="header-nav__item">
             <button class="button header-nav__button" type="button">재테크
-              <img src="./assets/icon-arrow.svg" alt="화살표">
+              <img src="./src/assets/icon-arrow.svg" alt="화살표">
             </button>
             <ul class="sub-menu">
               <li>
@@ -106,7 +106,7 @@
           </li>
           <li class="header-nav__item">
             <button class="button header-nav__button" type="button">네카라쿠배
-              <img src="./assets/icon-arrow.svg" alt="화살표">
+              <img src="./src/assets/icon-arrow.svg" alt="화살표">
 
             </button>
             <ul class="sub-menu">
@@ -152,7 +152,7 @@
       <ul class="banner-container">
         <li class="banner-slide is-active">
           <a href="#">
-            <img src="./assets/banner_1.png" alt="데이터 사이언스 강의" />
+            <img src="./src/assets/banner_1.png" alt="데이터 사이언스 강의" />
             <div class="banner-desc">
               <span class="status banner__status" lang="ko">이번주 한정</span>
               <h3>모든 데이터 사이언스 강의 <br />최대 73% 역대급 할인</h3>
@@ -162,7 +162,7 @@
         </li>
         <li class="banner-slide">
           <a href="#">
-            <img src="./assets/banner_2.png" alt="완주반" />
+            <img src="./src/assets/banner_2.png" alt="완주반" />
             <div class="banner-desc">
               <span class="status banner__status" lang="en">Best</span>
               <h3>완주반에선 <br />매주 환급해드려요!</h3>
@@ -172,7 +172,7 @@
         </li>
         <li class="banner-slide">
           <a href="#">
-            <img src="./assets/banner_3.png" alt="한 달 한 권" />
+            <img src="./src/assets/banner_3.png" alt="한 달 한 권" />
             <div class="banner-desc">
               <span class="status banner__status" lang="en">new</span>
               <h3>제대로 읽는 베스트셀러 <br />한 달 한 권</h3>
@@ -182,7 +182,7 @@
         </li>
         <li class="banner-slide">
           <a href="#">
-            <img src="./assets/banner_4.jpg" alt="커리어" />
+            <img src="./src/assets/banner_4.jpg" alt="커리어" />
             <div class="banner-desc">
               <span class="status banner__status" lang="en">open</span>
               <h3>'내 커리어 이대로 괜찮을까' <br />고민된다면</h3>
@@ -200,7 +200,7 @@
             <a href="#practice">
               <figure>
                 <span class="main__item-wrapper">
-                  <img src="./assets/result.png" alt="result" />
+                  <img src="./src/assets/result.png" alt="result" />
                 </span>
                 <figcaption>실습결과물</figcaption>
               </figure>
@@ -210,7 +210,7 @@
             <a href="#course">
               <figure>
                 <span class="main__item-wrapper">
-                  <img src="./assets/class.png" alt="class" />
+                  <img src="./src/assets/class.png" alt="class" />
                 </span>
                 <figcaption>인기클래스</figcaption>
               </figure>
@@ -220,7 +220,7 @@
             <a href="#letcurer">
               <figure>
                 <span class="main__item-wrapper">
-                  <img src="./assets/mentor.png" alt="mentor" />
+                  <img src="./src/assets/mentor.png" alt="mentor" />
                 </span>
                 <figcaption>강사진</figcaption>
               </figure>
@@ -230,7 +230,7 @@
             <a href="#company">
               <figure>
                 <span class="main__item-wrapper">
-                  <img src="./assets/media.png" alt="media" />
+                  <img src="./src/assets/media.png" alt="media" />
                 </span>
                 <figcaption>제로베이스</figcaption>
               </figure>
@@ -246,7 +246,7 @@
           <article class="card card-practice">
             <img
               class="card__thumb"
-              src="./assets/webcafe-basic.PNG"
+              src="./src/assets/webcafe-basic.PNG"
               width="400"
               alt="webcafe basic"
             />
@@ -267,7 +267,7 @@
           <article class="card card-practice">
             <img
               class="card__thumb"
-              src="./assets/netf-RWD.PNG"
+              src="./src/assets/netf-RWD.PNG"
               width="400"
               alt="netflix RWD"
             />
@@ -292,7 +292,7 @@
           <article class="card card-practice">
             <img
               class="card__thumb"
-              src="./assets/netf-sass.PNG"
+              src="./src/assets/netf-sass.PNG"
               width="400"
               alt="netflix Sass"
             />
@@ -315,7 +315,7 @@
           <article class="card card-practice">
             <img
               class="card__thumb"
-              src="./assets/tailwind.png"
+              src="./src/assets/tailwind.png"
               width="400"
               alt="tailwind"
             />
@@ -333,106 +333,9 @@
             </div>
           </article>
         </div>
-        <div class="button-group">
-          <button class="button-practice-prev" type="button">좌</button>
-          <button class="button-practice-next" type="button">우</button>
-        </div>
-      </section>
-      <section class="content course">
-        <h2 class="content__title" id="course">네카라쿠배 3기 인기 클래스</h2>
-        <article class="carousel-course">
-          <h3 class="carousel-title">HTML, CSS 기초</h3>
-          <span class="status carousel-status">best</span>
-          <p class="carousel-desc">21일 HTML/CSS 마스터</p>
-        </article>
-        <article class="carousel-course">
-          <h3 class="carousel-title">자료구조 / 알고리즘 기초</h3>
-          <span class="status carousel-status">best</span>
-          <p class="carousel-desc">21일 코딩테스트 부수기</p>
-        </article>
-        <article class="carousel-course">
-          <h3 class="carousel-title">Git / Github 기초</h3>
-          <span class="status carousel-status">best</span>
-          <p class="carousel-desc">7일 Git/Github 마스터</p>
-        </article>
-        <article class="carousel-course">
-          <h3 class="carousel-title">Javascript 심화</h3>
-          <span class="status carousel-status">best</span>
-          <p class="carousel-desc">60일 Javascript 마스터</p>
-        </article>
-      </section>
-      <section class="content lecturer">
-        <h2 class="content__title">네카라쿠배 프론트엔드 3기 수호자</h2>
-        <article class="card card-lecturer">
-          <h3 class="sr-only" id="letcurer">최우영 강사님</h3>
-          <img
-            class="card__thumb"
-            src="./assets/choi.png"
-            alt="최우영 강사님"
-          />
-          <div class="card-lecturer-info">
-            <strong class="card__subtitle">
-              Git/Github <span aria-hidden="true">|</span> 협업의 시작은
-              git/github로부터
-            </strong>
-            <p class="card__desc">git/github로 받는 스트레스는 이제 그만 !</p>
-            <div class="tag-wrapper">
-              <span class="tag take__tag">수강가능</span>
-              <span class="tag git__tag">Git/Github</span>
-              <span class="tag cooper__tag">협업의 기본</span>
-            </div>
-          </div>
-        </article>
-        <article class="card card-practice">
-          <img src="./assets/netf-RWD.PNG" width="400" alt="netflix RWD" />
-          <h3 class="card__title">반응형 레이아웃 웹 만들기</h3>
-          <strong class="card__subtitle">
-            2일 미니프로젝트 <span aria-hidden="true">|</span> 반응형 웹을
-            자유자재로
-          </strong>
-          <p class="card__desc">
-            비효율적인 고정형 레이아웃은 그만! 넷플릭스 클론코딩을 통한 반응형
-            웹 입문하기
-          </p>
-          <div class="tag-wrapper">
-            <span class="tag html__tag">HTML/CSS</span>
-            <span class="tag rwd__tag">반응형</span>
-            <span class="tag netflix__tag">넷플릭스</span>
-            <span class="tag clone__tag">클론코딩</span>
-          </div>
-        </article>
-        <article class="card card-practice">
-          <img src="./assets/netf-sass.PNG" width="400" alt="netflix Sass" />
-          <h3 class="card__title">SASS를 사용하여 웹 만들기</h3>
-          <strong class="card__subtitle">
-            3일 미니프로젝트 <span aria-hidden="true">|</span> SASS를 통한 CSS
-            관리방법
-          </strong>
-          <p class="card__desc">반응형 레이아웃과 SASS를 동시에 잡아보자!</p>
-          <div class="tag-wrapper">
-            <span class="tag sass__tag">SASS</span>
-            <span class="tag netflix__tag">넷플릭스</span>
-            <span class="tag clone__tag">클론코딩</span>
-          </div>
-        </article>
-        <article class="card card-practice">
-          <img src="./assets/tailwind.png" width="400" alt="tailwind" />
-          <h3 class="card__title">Tailwind를 사용하여 웹 만들기</h3>
-          <strong class="card__subtitle">
-            1일 미니프로젝트 <span aria-hidden="true">|</span> Tailwind를 통한
-            CSS 관리방법
-          </strong>
-          <p class="card__desc">기존의 웹카페로 Tailwind 완전정복!</p>
-          <div class="tag-wrapper">
-            <span class="tag take__tag">수강가능</span>
-            <span class="tag prog__tag">프로그래밍</span>
-          </div>
-        </article>
-      </div>
-
       <div class="button-group">
-        <button class="button-practice-prev" type="button">좌</button>
-        <button class="button-practice-next" type="button">우</button>
+        <button class="button-practice-prev" type="button" aria-label="왼쪽으로">&lt;</button>
+        <button class="button-practice-next" type="button" aria-label="오른쪽으로">&gt;</button>
       </div>
     </section>
     <section class="content course">
@@ -462,7 +365,7 @@
       <h2 class="content__title">네카라쿠배 프론트엔드 3기 수호자</h2>
       <article class="card card-lecturer">
         <h3 class="sr-only" id="letcurer">최우영 강사님</h3>
-        <img class="card__thumb" src="./assets/choi.png" alt="최우영 강사님" />
+        <img class="card__thumb" src="./src/assets/choi.png" alt="최우영 강사님" />
         <div class="card-lecturer-info">
           <strong class="card__subtitle">
             Git/Github <span aria-hidden="true">|</span> 협업의 시작은
@@ -478,7 +381,7 @@
       </article>
       <article class="card card-lecturer">
         <h3 class="sr-only">김데레사 강사님</h3>
-        <img class="card__thumb" src="./assets/html_lect.jpg" alt="김데레사 강사님" />
+        <img class="card__thumb" src="./src/assets/html_lect.jpg" alt="김데레사 강사님" />
         <div class="card-lecturer-info">
           <strong class="card__subtitle">
             HTML/CSS <span aria-hidden="true">|</span> 아름다운 미모와 그에
@@ -497,7 +400,7 @@
       </article>
       <article class="card card-lecturer">
         <h3 class="sr-only">이웅모 강사님</h3>
-        <img class="card__thumb" src="./assets/lee.jpeg" alt="이웅모 강사님" />
+        <img class="card__thumb" src="./src/assets/lee.jpeg" alt="이웅모 강사님" />
         <div class="card-lecturer-info">
           <strong class="card__subtitle">
             Javascript <span aria-hidden="true">|</span> 동작원리부터 꿰뚫는
@@ -516,7 +419,7 @@
       </article>
       <article class="card card-lecturer">
         <h3 class="sr-only">김태원 강사님</h3>
-        <img class="card__thumb" src="./assets/algo_lect.jpg" alt="김태원 강사님" />
+        <img class="card__thumb" src="./src/assets/algo_lect.jpg" alt="김태원 강사님" />
         <div class="card-lecturer-info">
           <strong class="card__subtitle">
             자료구조/알고리즘 <span aria-hidden="true">|</span> 1타 강사가
@@ -535,7 +438,7 @@
       </article>
       <article class="card card-lecturer">
         <h3 class="sr-only">박신영 커리어매니저님</h3>
-        <img class="card__thumb" src="./assets/html_lect.jpg" alt="김데레사 강사님" />
+        <img class="card__thumb" src="./src/assets/html_lect.jpg" alt="김데레사 강사님" />
         <div class="card-lecturer-info">
           <strong class="card__subtitle">
             커리어 <span aria-hidden="true">|</span> 효율적인 자기소개서
@@ -553,7 +456,7 @@
         </div>
       </article>
       <article class="card card-lecturer">
-        <img class="card__thumb" src="./assets/std_lect.png" alt="강호준 강사님" />
+        <img class="card__thumb" src="./src/assets/std_lect.png" alt="강호준 강사님" />
         <h3 class="sr-only">강호준 팀장님</h3>
         <div class="card-lecturer-info">
           <strong class="card__subtitle">
@@ -572,7 +475,7 @@
       </article>
       <article class="card card-lecturer">
         <h3 class="sr-only">이인영 매니저님</h3>
-        <img class="card__thumb" src="./assets/std_lect.png" alt="강호준 강사님" />
+        <img class="card__thumb" src="./src/assets/std_lect.png" alt="강호준 강사님" />
         <div class="card-lecturer-info">
           <strong class="card__subtitle">
             멘탈관리 <span aria-hidden="true">|</span> 꾸준히 하는 공부만큼
@@ -590,7 +493,7 @@
       </article>
       <article class="card card-lecturer">
         <h3 class="sr-only">박상언 매니저님</h3>
-        <img class="card__thumb" src="./assets/park.jpg" alt="박상언 매니저님" />
+        <img class="card__thumb" src="./src/assets/park.jpg" alt="박상언 매니저님" />
         <div class="card-lecturer-info">
           <strong class="card__subtitle">
             학습관리 <span aria-hidden="true">|</span> 네카라쿠배 프론트엔드
@@ -675,22 +578,22 @@
         <!-- 아이콘 추가 -->
         <li>
           <a href="">
-            <img src="./assets/blog.svg" alt="네이버 블로그" />
+            <img src="./src/assets/blog.svg" alt="네이버 블로그" />
           </a>
         </li>
         <li>
           <a href="">
-            <img src="./assets/facebook.svg" alt="페이스북" />
+            <img src="./src/assets/facebook.svg" alt="페이스북" />
           </a>
         </li>
         <li>
           <a href="">
-            <img src="./assets/instagram.svg" alt="인스타그램" />
+            <img src="./src/assets/instagram.svg" alt="인스타그램" />
           </a>
         </li>
         <li>
           <a href="">
-            <img src="./assets/youtube.svg" alt="유튜브" />
+            <img src="./src/assets/youtube.svg" alt="유튜브" />
           </a>
         </li>
       </ul>

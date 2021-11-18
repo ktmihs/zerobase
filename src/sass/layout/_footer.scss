@@ -20,8 +20,7 @@ body {
 
   @include boxSizeFull;
   width: 100vw;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  @include paddingX(16px);
 
   @include tablet {
     padding-left: 5vw;
@@ -118,7 +117,7 @@ body {
 
   // footer-more
   &-more {
-    width: 80vw;
+    width: 90vw;
     border-top: rem(1px) solid $footer-border-color;
     padding-top: rem(32px);
     margin-top: rem(52px);

@@ -3,7 +3,7 @@
     "start": "run-p dev sass:watch",
     "sass:build": "sass src/sass:src/style/",
     "sass:watch": "npm run sass:build -- --watch",
-    "dev": "live-server src"
+    "dev": "live-server"
   },
   "devDependencies": {
     "live-server": "^1.2.1",
