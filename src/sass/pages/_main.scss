@@ -1,0 +1,179 @@
+@use './../utils' as *;
+
+.main-nav {
+  padding: rem(24px) 0;
+  @include tablet {
+    padding: rem(48px) 0;
+  }
+  @include desktop {
+    padding: rem(48px) 0;
+  }
+}
+
+.main-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main__item {
+  list-style-type: none;
+  span {
+    width: rem(64px);
+    height: rem(64px);
+    overflow: hidden;
+    border-radius: 30%;
+
+    @include tablet {
+      width: rem(96px);
+      height: rem(96px);
+    }
+    @include desktop {
+      width: rem(96px);
+      height: rem(96px);
+    }
+  }
+
+  img {
+    width: rem(64px);
+    height: rem(64px);
+    border-radius: 30%;
+    transition: transform 0.2s linear;
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    @include desktop {
+      width: rem(96px);
+      height: rem(96px);
+    }
+    @include tablet {
+      width: rem(96px);
+      height: rem(96px);
+    }
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration-line: none;
+  }
+}
+
+.content {
+  position: relative;
+}
+
+.practice-container {
+  @include flexbox($wrap: nowrap);
+  overflow: hidden;
+}
+
+.card-practice {
+  margin-right: rem(16px);
+  @include mobile {
+    flex-basis: 90%;
+    flex-shrink: 0;
+  }
+
+  @include tablet {
+    flex-basis: 48%;
+  }
+
+  @include desktop {
+    flex-basis: 32%;
+  }
+  flex-shrink: 0;
+
+  &-info {
+    padding: rem(8px);
+  }
+}
+
+.content {
+  padding-top: rem(68px);
+
+  &__title {
+    @include font-24px-B;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.button-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.course {
+  display: block;
+  @include marginY(16px);
+
+  .carousel-title {
+    @include font-18px-B;
+  }
+  .carousel-course {
+    border-radius: rem(10px);
+    background-color: cornflowerblue;
+    color: $white;
+    padding: rem(16px);
+    margin-top: rem(16px);
+  }
+  .carousel-status,
+  .carousel-desc {
+    display: inline;
+    margin-right: rem(8px);
+    @include font-14px-B;
+  }
+  .carousel-status {
+    text-transform: uppercase;
+    color: yellow;
+  }
+  // @include tablet{
+  //   height: rem(45px);
+  // }
+  // @include desktop{
+  //   height: rem(45px);
+
+  // }
+}
+
+figcaption {
+  margin-top: rem(16px);
+  text-align: center;
+  color: $black;
+  @include font-12px-B;
+  @include desktop {
+    @include font-18px-B;
+  }
+  @include tablet {
+    @include font-18px-B;
+  }
+}
+
+.lecturer {
+  @include flexbox($wrap: wrap);
+}
+
+.card-lecturer {
+  @include autoMargin;
+  @include mobile {
+    flex-basis: 100%;
+  }
+
+  @include tablet {
+    flex-basis: 48%;
+  }
+
+  @include desktop {
+    flex-basis: 32%;
+  }
+}

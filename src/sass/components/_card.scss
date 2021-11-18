@@ -1,0 +1,93 @@
+@use './../utils/unit' as *;
+@use './../utils/font' as *;
+@use './../utils/color' as *;
+@use './../utils/mixin' as *;
+@use './../utils/flexbox' as *;
+@use './../utils/media-query' as *;
+
+.card {
+  @include tablet {
+    @include paddingX(16px);
+    @include paddingY(16px);
+    background-color: $white;
+  }
+  @include desktop {
+    @include paddingX(16px);
+    @include paddingY(16px);
+    background-color: $white;
+  }
+
+  border-radius: rem(10px);
+  margin-bottom: 12px;
+
+  &__title {
+    @include font-24px-B;
+  }
+
+  &__thumb {
+    border-radius: rem(10px);
+    width: 100%;
+  }
+
+  &__subtitle {
+    @include font-18px-B;
+    @include marginY(16px);
+    display: block;
+    max-height: rem(54px);
+    order: -1;
+
+    @include mobile {
+      margin-top: rem(4px);
+    }
+  }
+
+  &__desc {
+    @include font-14px;
+    color: $desc-font;
+  }
+}
+
+.card-practice {
+  background-color: $white;
+  overflow: hidden;
+
+  .card__title {
+    height: rem(36px);
+  }
+
+  .card__desc {
+    margin-bottom: rem(22px);
+  }
+}
+
+.card-lecturer {
+  @include flexbox($direction: column);
+  @include mobile {
+    flex-direction: row;
+    flex-grow: 1;
+    max-height: rem(150px);
+  }
+
+  .card__thumb {
+    @include mobile {
+      width: rem(140px);
+    }
+  }
+
+  &-info {
+    @include flexbox($direction: column);
+    @include mobile {
+      @include paddingX(16px);
+    }
+    @include tablet {
+      padding-top: rem(16px);
+    }
+    @include desktop {
+      @include paddingY(16px);
+    }
+  }
+}
+
+.tag-wrapper {
+  order: -2;
+}
