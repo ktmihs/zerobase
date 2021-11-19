@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="제로베이스 클론코딩" />
+    <meta name="keywords" content="반응형웹,반응형,클론코딩" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="제로베이스" />
+    <meta property="og:description" content="제로베이스 클론코딩" />
+    <meta property="og:image" content="제로베이스" />
+    <meta property="og:url" content="https://zero-base.co.kr/" />
+    <meta property="twitter:card" content="제로베이스" />
+    <meta property="twitter:title" content="제로베이스" />
+    <meta property="twitter:description" content="제로베이스 클론코딩" />
+    <meta property="twitter:image" content="제로베이스" />
+    <title>제로베이스 - 밑바닥부터 끝까지 듣는 온라인 강의</title>
+    <link rel="stylesheet" href="./src/style/index.css" />
+    <script defer src="./src/js/navigation.js"></script>
+    <script defer src="./src/js/banner.js"></script>
+    <script defer src="./src/js/course.js"></script>
+    <script defer src="./src/js/carousel.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-layout">
+        <h1 class="header__title">
+          <a class="logo" href="#"
+            ><img src="./src/assets/logo.svg" alt="zerobase"
+          /></a>
+        </h1>
+        <nav class="header-nav">
+          <!-- hamberger button -->
+          <button class="buttonNone button--burger" aria-label="메뉴 열기">
+            <span class="button--burger__top"></span>
+            <span class="button--burger__middle"></span>
+            <span class="button--burger__bottom"></span>
+          </button>
+          <!-- 데스크탑일 때 아이콘 추가 -->
+
+          <h2 class="sr-only">메인 메뉴</h2>
+          <ul class="header-nav-list">
+            <li class="header-nav__item">
+              <div class="member-service">
+                <div class="login">
+                  <img
+                    class="loginIcon"
+                    src="./src/assets/login.svg"
+                    alt="로그인"
+                  />
+                  <a class="header-members__login" href="./src/signin.html"
+                    >로그인</a
+                  >
+                </div>
+                <div class="signup">
+                  <img
+                    class="signupIcon"
+                    src="./src/assets/signup.svg"
+                    alt="회원가입"
+                  />
+                  <a class="header-members__signup" href="./src/signup.html"
+                    >회원가입</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <button type="button" class="button header-nav__button">
+                about us
+                <img src="./src/assets/icon-arrow.svg" alt="화살표" />
+              </button>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">제로베이스 소개</a>
+                </li>
+                <li>
+                  <a href="#">제로베이스 미디어</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-nav__item">
+              <button class="button header-nav__button" type="button">
+                이벤트
+                <img src="./src/assets/icon-arrow.svg" alt="화살표" />
+              </button>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">최대 73% 할인 참교육 위-크!</a>
+                </li>
+                <li>
+                  <a href="#">무료 커리어상담 오픈</a>
+                </li>
+                <li>
+                  <a href="#">완주하면 혜택을!</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-nav__item">
+              <button class="button header-nav__button" type="button">
+                온라인 강의
+                <img src="./src/assets/icon-arrow.svg" alt="화살표" />
+              </button>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">온라인 완주반</a>
+                </li>
+                <li>
+                  <a href="#">한달한권</a>
+                </li>
+                <li>
+                  <a href="#">하루 10분컷</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-nav__item">
+              <button class="button header-nav__button" type="button">
+                재테크
+                <img src="./src/assets/icon-arrow.svg" alt="화살표" />
+              </button>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">김학주 교수의 투자 바이블</a>
+                </li>
+                <li>
+                  <a href="#">리장에게 배우는 월가의 영웅</a>
+                </li>
+                <li>
+                  <a href="#">데이터로 하는 투자. 이헌열의 퀸트</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-nav__item">
+              <button class="button header-nav__button" type="button">
+                네카라쿠배
+                <img src="./src/assets/icon-arrow.svg" alt="화살표" />
+              </button>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">about 네카라쿠배</a>
+                </li>
+                <li>
+                  <a href="#">프론트엔드 1기(마감)</a>
+                </li>
+                <li>
+                  <a href="#">프론트엔드 2기(마감)</a>
+                </li>
+                <li>
+                  <a href="#">프론트엔드 3기(마감)</a>
+                </li>
+                <li>
+                  <a href="#">프론트엔드 온라인(마감)</a>
+                </li>
+                <li>
+                  <a href="#">데이터 사이언스 1기(마감)</a>
+                </li>
+                <li>
+                  <a href="#">데이터 사이언스 온라인(마감)</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <aside class="banner">
+      <h2 class="sr-only">배너</h2>
+      <span class="banner-list-status"
+        ><span class="current-page" aria-label="현재 페이지">1</span>
+        <span aria-hidden="true">/</span>
+        <span aria-label="전체 페이지">4</span>
+      </span>
+      <div class="banner-list-control">
+        <button class="button-prev">&lt;</button
+        ><button class="button-pause">||</button
+        ><button class="button-next">&gt;</button>
+      </div>
+      <ul class="banner-container">
+        <li class="banner-slide is-active">
+          <a href="#">
+            <img src="./src/assets/banner_1.png" alt="데이터 사이언스 강의" />
+            <div class="banner-desc">
+              <span class="status banner__status" lang="ko">이번주 한정</span>
+              <h3>모든 데이터 사이언스 강의 <br />최대 73% 역대급 할인</h3>
+              <p>단 일주일, 50% 추가 할인 쿠폰 증정(~11/14)</p>
+            </div>
+          </a>
+        </li>
+        <li class="banner-slide">
+          <a href="#">
+            <img src="./src/assets/banner_2.png" alt="완주반" />
+            <div class="banner-desc">
+              <span class="status banner__status" lang="en">Best</span>
+              <h3>완주반에선 <br />매주 환급해드려요!</h3>
+              <p>완주반과 함께하면 끝까지 할 수 있어요!</p>
+            </div>
+          </a>
+        </li>
+        <li class="banner-slide">
+          <a href="#">
+            <img src="./src/assets/banner_3.png" alt="한 달 한 권" />
+            <div class="banner-desc">
+              <span class="status banner__status" lang="en">new</span>
+              <h3>제대로 읽는 베스트셀러 <br />한 달 한 권</h3>
+              <p>현직자의 해설 강의와 함께 읽어보세요</p>
+            </div>
+          </a>
+        </li>
+        <li class="banner-slide">
+          <a href="#">
+            <img src="./src/assets/banner_4.jpeg" alt="커리어" />
+            <div class="banner-desc">
+              <span class="status banner__status" lang="en">open</span>
+              <h3>'내 커리어 이대로 괜찮을까' <br />고민된다면</h3>
+              <p>지금 프로필 업데이트하고 무료 상담받아 가세요!</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main class="main">
+      <nav class="main-nav">
+        <h2 class="sr-only">네비게이션</h2>
+        <ul class="main-list">
+          <li class="main__item">
+            <a href="#practice">
+              <figure>
+                <span class="main__item-wrapper">
+                  <img src="./src/assets/result.png" alt="result" />
+                </span>
+                <figcaption>실습결과물</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="main__item">
+            <a href="#course">
+              <figure>
+                <span class="main__item-wrapper">
+                  <img src="./src/assets/class.png" alt="class" />
+                </span>
+                <figcaption>인기클래스</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="main__item">
+            <a href="#letcurer">
+              <figure>
+                <span class="main__item-wrapper">
+                  <img src="./src/assets/mentor.png" alt="mentor" />
+                </span>
+                <figcaption>강사진</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="main__item">
+            <a href="#company">
+              <figure>
+                <span class="main__item-wrapper">
+                  <img src="./src/assets/media.png" alt="media" />
+                </span>
+                <figcaption>제로베이스</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="content practice">
+        <h2 class="content__title" id="practice">네카라쿠배 3기 실습 결과물</h2>
+        <div class="practice-container">
+          <article class="card card-practice" tabindex="0">
+            <a href="#" aria-label="고정형 레이아웃 웹 만들기">
+              <img
+                class="card__thumb"
+                src="./src/assets/webcafe-basic.PNG"
+                width="400"
+                alt="webcafe basic"
+              />
+              <div class="card-practice-info">
+                <h3 class="card__title">고정형 레이아웃 웹 만들기</h3>
+                <strong class="card__subtitle">
+                  5일 미니프로젝트 <span aria-hidden="true">|</span> HTML 마크업
+                </strong>
+                <p class="card__desc">
+                  고정형 레이아웃으로 HTML/CSS 기초 완벽하게 잡기
+                </p>
+                <div class="tag-wrapper">
+                  <span class="tag html__tag">HTML/CSS</span>
+                  <span class="tag fixed__tag">고정형</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="card card-practice" tabindex="0">
+            <a href="#" aria-label="반응형 레이아웃 웹 만들기">
+              <img
+                class="card__thumb"
+                src="./src/assets/netf-RWD.PNG"
+                width="400"
+                alt="netflix RWD"
+              />
+              <div class="card-practice-info">
+                <h3 class="card__title">반응형 레이아웃 웹 만들기</h3>
+                <strong class="card__subtitle">
+                  2일 미니프로젝트 <span aria-hidden="true">|</span> 반응형 웹을
+                  자유자재로
+                </strong>
+                <p class="card__desc">
+                  비효율적인 고정형 레이아웃은 그만! 넷플릭스 클론코딩을 통한
+                  반응형 웹 입문하기
+                </p>
+                <div class="tag-wrapper">
+                  <span class="tag html__tag">HTML/CSS</span>
+                  <span class="tag rwd__tag">반응형</span>
+                  <span class="tag netflix__tag">넷플릭스</span>
+                  <span class="tag clone__tag">클론코딩</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="card card-practice" tabindex="0">
+            <a href="#" aria-label="SASS를 사용하여 웹 만들기">
+              <img
+                class="card__thumb"
+                src="./src/assets/netf-sass.PNG"
+                width="400"
+                alt="netflix Sass"
+              />
+              <div class="card-practice-info">
+                <h3 class="card__title">SASS를 사용하여 웹 만들기</h3>
+                <strong class="card__subtitle">
+                  3일 미니프로젝트 <span aria-hidden="true">|</span> SASS를 통한
+                  CSS 관리방법
+                </strong>
+                <p class="card__desc">
+                  반응형 레이아웃과 SASS를 동시에 잡아보자!
+                </p>
+                <div class="tag-wrapper">
+                  <span class="tag sass__tag">SASS</span>
+                  <span class="tag netflix__tag">넷플릭스</span>
+                  <span class="tag clone__tag">클론코딩</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="card card-practice" tabindex="0">
+            <a href="#" aria-label="Tailwind를 사용하여 웹 만들기">
+              <img
+                class="card__thumb"
+                src="./src/assets/tailwind.png"
+                width="400"
+                alt="tailwind"
+              />
+              <div class="card-practice-info">
+                <h3 class="card__title">Tailwind를 사용하여 웹 만들기</h3>
+                <strong class="card__subtitle">
+                  1일 미니프로젝트 <span aria-hidden="true">|</span> Tailwind를
+                  통한 CSS 관리방법
+                </strong>
+                <p class="card__desc">기존의 웹카페로 Tailwind 완전정복!</p>
+                <div class="tag-wrapper">
+                  <span class="tag take__tag">수강가능</span>
+                  <span class="tag prog__tag">프로그래밍</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="button-group">
+          <button
+            class="button-practice-prev"
+            type="button"
+            aria-label="왼쪽으로"
+            tabindex="0"
+          >
+            &lt;
+          </button>
+          <button
+            class="button-practice-next"
+            type="button"
+            aria-label="오른쪽으로"
+            tabindex="0"
+          >
+            &gt;
+          </button>
+        </div>
+      </section>
+      <section class="content course">
+        <h2 class="content__title" id="course">네카라쿠배 3기 인기 클래스</h2>
+        <span class="carousel-article-status"
+          ><span class="current-page" aria-label="현재 페이지">1</span>
+          <span aria-hidden="true">/</span>
+          <span aria-label="전체 페이지">4</span>
+        </span>
+        <div class="carousel-article-control">
+          <button class="button-prev" aria-label="왼쪽으로">&lt;</button
+          ><button class="button-pause" aria-label="정지">||</button
+          ><button class="button-next" aria-label="오른쪽으로">&gt;</button>
+        </div>
+        <article
+          class="carousel-course carousel-banner1 is-active"
+          tabindex="0"
+        >
+          <a href="#" aria-label="HTML, CSS 기초">
+            <h3 class="carousel-title">HTML, CSS 기초</h3>
+            <span class="status carousel-status">best</span>
+            <p class="carousel-desc">21일 HTML/CSS 마스터</p>
+          </a>
+        </article>
+        <article class="carousel-course carousel-banner2" tabindex="0">
+          <a href="#" aria-label="자료구조 / 알고리즘 기초">
+            <h3 class="carousel-title">자료구조 / 알고리즘 기초</h3>
+            <span class="status carousel-status">best</span>
+            <p class="carousel-desc">21일 코딩테스트 부수기</p>
+          </a>
+        </article>
+        <article class="carousel-course carousel-banner3" tabindex="0">
+          <a href="#" aria-label="Git / Github 기초">
+            <h3 class="carousel-title">Git / Github 기초</h3>
+            <span class="status carousel-status">best</span>
+            <p class="carousel-desc">7일 Git/Github 마스터</p>
+          </a>
+        </article>
+        <article class="carousel-course carousel-banner4" tabindex="0">
+          <a href="#" aria-label="Javascript 심화">
+            <h3 class="carousel-title">Javascript 심화</h3>
+            <span class="status carousel-status">best</span>
+            <p class="carousel-desc">60일 Javascript 마스터</p>
+          </a>
+        </article>
+      </section>
+      <section class="content lecturer">
+        <h2 class="content__title">네카라쿠배 3기 수호자</h2>
+        <article class="card card-lecturer" tabindex="0">
+          <a href="#" aria-label="최우영 강사님">
+            <h3 class="sr-only" id="letcurer">최우영 강사님</h3>
+            <img
+              class="card__thumb"
+              src="./src/assets/choi.png"
+              alt="최우영 강사님"
+            />
+            <div class="card-lecturer-info">
+              <strong class="card__subtitle">
+                Git/Github <span aria-hidden="true">|</span> 협업의 시작은
+                git/github로부터
+              </strong>
+              <p class="card__desc">git/github로 받는 스트레스는 이제 그만 !</p>
+              <div class="tag-wrapper">
+                <span class="tag take__tag">수강가능</span>
+                <span class="tag git__tag">Git/Github</span>
+                <span class="tag cooper__tag">협업의 기본</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="card card-lecturer" tabindex="0">
+          <a href="#" aria-label="김데레사 강사님">
+            <h3 class="sr-only">김데레사 강사님</h3>
+            <img
+              class="card__thumb"
+              src="./src/assets/html_lect.jpg"
+              alt="김데레사 강사님"
+            />
+            <div class="card-lecturer-info">
+              <strong class="card__subtitle">
+                HTML/CSS <span aria-hidden="true">|</span> semantic tag와
+                접근성의 힘을 느낄 수 있는 강의
+              </strong>
+              <p class="card__desc">
+                어떠한 태그와 어떠한 선택자도 의미없이 사용하지 않는다?
+                프론트엔드 개발에 중요한 HTML/CSS가 궁금하다면 무조건 수강하기
+              </p>
+              <div class="tag-wrapper">
+                <span class="tag take__tag">수강가능</span>
+                <span class="tag html__tag">HTML/CSS</span>
+                <span class="tag markup__tag">마크업 기초</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="card card-lecturer" tabindex="0">
+          <a href="#" aria-label="이웅모 강사님">
+            <h3 class="sr-only">이웅모 강사님</h3>
+            <img
+              class="card__thumb"
+              src="./src/assets/lee.jpeg"
+              alt="이웅모 강사님"
+            />
+            <div class="card-lecturer-info">
+              <strong class="card__subtitle">
+                Javascript <span aria-hidden="true">|</span> 동작원리부터 꿰뚫는
+                자바스크립트 수업
+              </strong>
+              <p class="card__desc">
+                자바스크립트의 고수가 되고 싶다면 ? 예비 개발자가 아닌, '현업
+                개발자'가 되기 위해서 필요한 역량을 모두 알려준다!
+              </p>
+              <div class="tag-wrapper">
+                <span class="tag take__tag">수강가능</span>
+                <span class="tag js__tag">Javascript</span>
+                <span class="tag coding__tag">코딩 스킬</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="card card-lecturer" tabindex="0">
+          <a href="#" aria-label="김태원 강사님">
+            <h3 class="sr-only">김태원 강사님</h3>
+            <img
+              class="card__thumb"
+              src="./src/assets/algo_lect.jpg"
+              alt="김태원 강사님"
+            />
+            <div class="card-lecturer-info">
+              <strong class="card__subtitle">
+                자료구조/알고리즘 <span aria-hidden="true">|</span> 1타 강사가
+                알려주는 자료구조/알고리즘
+              </strong>
+              <p class="card__desc">
+                항상 새롭게 느껴지는 코딩테스트는 그만 ! 유형분석과 정형화를
+                통한 코딩테스트 합격방법
+              </p>
+              <div class="tag-wrapper">
+                <span class="tag take__tag">수강가능</span>
+                <span class="tag algorithm__tag">알고리즘</span>
+                <span class="tag coding__tag">코딩테스트</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="card card-lecturer" tabindex="0">
+          <a href="#" aria-label="박신영 커리어매니저님">
+            <h3 class="sr-only">박신영 커리어매니저님</h3>
+            <img
+              class="card__thumb"
+              src="./src/assets/alter-lect-park.png"
+              alt="박신영 커리어매니저님"
+            />
+            <div class="card-lecturer-info">
+              <strong class="card__subtitle">
+                커리어 <span aria-hidden="true">|</span> 효율적인 자기소개서
+                작성법과 면접 행동요령
+              </strong>
+              <p class="card__desc">
+                대기업 서류/면접 합격자들의 공통점을 파헤친다. 면접관의 이목을
+                집중하는 방법 대공개!
+              </p>
+              <div class="tag-wrapper">
+                <span class="tag take__tag">수강가능</span>
+                <span class="tag career__tag">커리어</span>
+                <span class="tag interview__tag">면접의 정석</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="card card-lecturer" tabindex="0">
+          <a href="#" aria-label="강호준 팀장님">
+            <img
+              class="card__thumb"
+              src="./src/assets/std_lect.png"
+              alt="강호준 팀장님"
+            />
+            <h3 class="sr-only">강호준 팀장님</h3>
+            <div class="card-lecturer-info">
+              <strong class="card__subtitle">
+                멘토링 <span aria-hidden="true">|</span> 누구보다 차갑지만
+                누구보다 따뜻한 멘토링비법
+              </strong>
+              <p class="card__desc">
+                압박면접의 표본을 보여주는 면접방식과 면접자를 압도하는 포스로
+                수강생들의 면접경험을 키워주는 비결은..?
+              </p>
+              <div class="tag-wrapper">
+                <span class="tag take__tag">수강가능</span>
+                <span class="tag interview__tag">압박면접</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="card card-lecturer" tabindex="0">
+          <a href="#" aria-label="이인영 매니저님">
+            <h3 class="sr-only">이인영 매니저님</h3>
+            <img
+              class="card__thumb"
+              src="./src/assets/alter-lect-lee.png"
+              alt="이인영 매니저님"
+            />
+            <div class="card-lecturer-info">
+              <strong class="card__subtitle">
+                멘탈관리 <span aria-hidden="true">|</span> 꾸준히 하는 공부만큼
+                중요한 멘탈관리방법
+              </strong>
+              <p class="card__desc">
+                수강생들의 멘탈케어를 잘할 수 밖에 없는 이유와 흔들린 멘탈을
+                잡는 방법에 대해 모든걸 알려준다!
+              </p>
+              <div class="tag-wrapper">
+                <span class="tag take__tag">수강가능</span>
+                <span class="tag mental__tag">멘탈케어</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="card card-lecturer" tabindex="0">
+          <a href="#" aria-label="박상언 매니저님">
+            <h3 class="sr-only">박상언 매니저님</h3>
+            <img
+              class="card__thumb"
+              src="./src/assets/park.jpg"
+              alt="박상언 매니저님"
+            />
+            <div class="card-lecturer-info">
+              <strong class="card__subtitle">
+                학습관리 <span aria-hidden="true">|</span> 네카라쿠배 프론트엔드
+                3기 학습관리법
+              </strong>
+              <p class="card__desc">
+                학습관리 매니저의 정석이란? 프론트엔드 스쿨의 세 기수를 경험하며
+                풀어보는 노하우!
+              </p>
+              <div class="tag-wrapper">
+                <span class="tag take__tag">수강가능</span>
+                <span class="tag study__tag">학습관리</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="sr-only">제로베이스 회사 정보</h2>
+      <section class="company">
+        <h3 class="footer-section__title" id="company">company</h3>
+        <dl class="footer-section-list">
+          <div>
+            <dt>회사 이름</dt>
+            <dd><span aria-hidden="true">: </span>데이원컴퍼니(주)</dd>
+          </div>
+          <div>
+            <dt>대표이사</dt>
+            <dd><span aria-hidden="true">: </span>이강민</dd>
+          </div>
+          <div>
+            <dt>개인정보책임관리자</dt>
+            <dd><span aria-hidden="true">: </span>이강민</dd>
+          </div>
+          <div>
+            <dt>사업자번호</dt>
+            <dd><span aria-hidden="true">: </span>810-86-00658</dd>
+          </div>
+          <div>
+            <dt>통신판매업 신고번호</dt>
+            <dd><span aria-hidden="true">: </span>제 2017-서울강남-01977호</dd>
+          </div>
+        </dl>
+      </section>
+      <section class="etc">
+        <h3 class="footer-section__title">etc</h3>
+        <ul class="footer-section-list">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li class="privacy"><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">환불규정</a></li>
+          <li><a href="#">채용</a></li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h3 class="footer-section__title">contact</h3>
+        <address>
+          <!-- list-style-type: '-'로 - 표시-->
+          <ul class="footer-section-list">
+            <li class="refund">
+              <a href="mailto:refund@zero-base.co.kr"
+                >환불 문의: refund@zero-base.co.kr</a
+              >
+            </li>
+            <li class="help">
+              <a href="mailto:help@zero-base.co.kr"
+                >기타문의: help@zero-base.co.kr</a
+              >
+            </li>
+            <li class="tel">
+              <a href="tel:025170647">고객센터: 02-517-0647</a>
+              <ul>
+                <li>오전 11시 ~ 저녁 6시까지 운영</li>
+                <li>주말 및 공휴일, 점심시간(12:00~13:00) 제외</li>
+              </ul>
+            </li>
+            <li>
+              사무실: 서울시 강남구 테헤란로 231, 6층 7층 (센터필드 웨스트)
+            </li>
+          </ul>
+        </address>
+      </section>
+      <a href="#" class="footer-movetop"><button>top</button></a>
+      <div class="footer-more">
+        <ul class="footer-sns">
+          <!-- 아이콘 추가 -->
+          <li>
+            <a href="https://blog.naver.com/fcschool">
+              <img src="./src/assets/blog.svg" alt="네이버 블로그" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://business.facebook.com/0base/?business_id=1374510989617382"
+            >
+              <img src="./src/assets/facebook.svg" alt="페이스북" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/zerobase.official">
+              <img src="./src/assets/instagram.svg" alt="인스타그램" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCL9x7Pmpnx5U6Fa1PzF87Og">
+              <img src="./src/assets/youtube.svg" alt="유튜브" />
+            </a>
+          </li>
+        </ul>
+        <small class="copyright"
+          >copyright &copy; 2021 (주)데이원컴퍼니. all rights reserved.</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>
