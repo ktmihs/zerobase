@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "run-p dev sass:watch",
+    "sass:build": "sass src/sass:src/style/",
+    "sass:watch": "npm run sass:build -- --watch",
+    "dev": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.43.4",
+    "sass-lint": "^1.13.1",
+    "scss-reset": "^1.2.2"
+  }
+}

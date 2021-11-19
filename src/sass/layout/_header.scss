@@ -1,0 +1,233 @@
+@use './../utils' as *;
+
+html.is-active {
+  overflow-y: hidden;
+}
+
+.header {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: $header-bg;
+  padding-bottom: rem(20px);
+  padding-top: rem(20px);
+  @include font-16px-B;
+  
+  a {
+  text-decoration: none;
+  color: inherit;
+  }
+
+  .logo {
+    @include flexbox($justify: center);
+    text-align: center;
+  }
+  @include onlyMobile {
+    &-members__login,
+    &-members__signup {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .login,
+    .signup {
+      width: 50%;
+      text-align: center;
+      img {
+        display: none;
+      }
+    }
+
+    .login {
+      border-right: 3px solid $gray;
+    }
+  }
+
+  .member-service {
+    display: flex;
+    justify-content: space-around;
+    background: $white;
+    border: 1px solid $white;
+    border-radius: rem(5px);
+    @include paddingX(20px);
+    @include paddingY(15px);
+    @include marginX(10px);
+    margin-top: rem(50px);
+    margin-bottom: rem(30px);
+  }
+
+  @include onlyMobile {
+    &-nav-list {
+      @include paddingX(16px);
+      padding-bottom: rem(60px);
+      background: $header-bg;
+      transform: translateX(100%);
+      transition: all 350ms ease-in-out;
+      position: absolute;
+      top: rem(60px);
+      width: 100%;
+      height: 100vh;
+      overflow-y: auto;
+      &.is-active {
+        transform: none;
+      }
+    }
+  }
+
+  &-nav__item {
+    cursor: pointer;
+  }
+
+  &-nav__button {
+    position: relative;
+    padding: rem(20px);
+    text-transform: uppercase;
+    @include font-16px-B;
+    width: 100%;
+    text-align: left;
+    height: rem(50px);
+
+    img {
+      position: absolute;
+      right: rem(30px);
+      transition: all 200ms ease-in-out;
+    }
+
+    &.is-active {
+      img {
+        transform: rotate(-180deg);
+        transition-property: all;
+        transition-duration: 0.2s;
+      }
+    }
+  }
+
+  .button--burger {
+    position: absolute;
+    padding: rem(5px);
+    top: rem(20px);
+    right: rem(10px);
+    &__top,
+    &__middle,
+    &__bottom {
+      transition: all 200ms;
+    }
+  }
+
+  .button--burger.is-active {
+    .button--burger__top {
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+    .button--burger__middle {
+      transform: translate(-150%, -50%);
+    }
+    .button--burger__bottom {
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+
+  .sub-menu {
+    display: none;
+    @include paddingX(15px);
+    @include marginX(15px);
+    background: $white;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+    @include font-14px-B;
+
+    li {
+      @include paddingY(10px);
+      border-bottom: 1px solid $white-gray;
+    }
+
+    li:last-child {
+      border-bottom: 0;
+    }
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  @include desktop {
+    @include flexbox;
+    position: fixed;
+    &__title {
+      margin-bottom: 0;
+    }
+    &-nav img {
+      transform: translateY(rem(2px));
+    }
+
+    .logo img {
+      transform: translateY(rem(10px));
+    }
+
+    &-layout {
+      @include flexbox($justify: space-between, $wrap: nowrap);
+      width: 100vw;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    .member-service {
+      padding-top: rem(5px);
+      background: inherit;
+      border: none;
+      order: 1;
+      @include paddingX(15);
+      margin: 0;
+    }
+
+    .login,
+    .signup {
+      img {
+        display: inline;
+        transform: translateY(rem(5px));
+      }
+    }
+
+    .login {
+      margin-right: rem(20px);
+    }
+
+    .sub-menu {
+      overflow-y: hidden;
+      position: absolute;
+      transform: translateX(-40px);
+      width: rem(230px);
+    }
+
+    &-nav-list {
+      @include flexbox;
+
+      &.is-active {
+        @include flexbox;
+        height: max-content;
+        width: 100vw;
+        position: static;
+        overflow: hidden;
+      }
+    }
+
+    &-nav__item:first-child {
+      order: 1;
+    }
+
+    &-nav__button {
+      img {
+        position: static;
+      }
+    }
+
+    &-members,
+    &-nav {
+      display: block;
+    }
+  }
+}
